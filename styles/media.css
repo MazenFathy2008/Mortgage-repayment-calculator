@@ -34,7 +34,7 @@
   #form-section{
     display: flex;
     justify-content: space-evenly;
-    height: 9%;
+    height: 100%;
     padding: 0;
     margin-top: 10px;
   }
