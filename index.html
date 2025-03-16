@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/left-section.css" />
+    <link rel="stylesheet" href="styles/right-section.css" />
+    <link rel="stylesheet" href="styles/primary.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script src="https://cdn.jsdelivr.net/npm/numbro@2.5.0/dist/numbro.min.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-section" id="left-section">
+        <header id="left-section-header">
+          <span>Mortgage calculator</span>
+          <span id="clear-span" class="js-clear-link">clear all</span>
+        </header>
+        <div id="form-section">
+          <div class="mortgage-amount-div js-input-number-field-container">
+            <label
+              for="mortgage-amount"
+              >Mortgage Amount</label
+            >
+            <div>
+              <span>&#8356;</span
+              ><input
+                type="text"
+                class="js-input-number-field js-mortgage-amount"
+                id="mortgage-amount"
+                name="mortgage-amount"
+              />
+            </div>
+            <div class="required-message-invisible js-error-message">
+              This field is required
+            </div>
+          </div>
+          <div class="mortgage-term-interest-div">
+            <div class="mortgage-details js-input-number-field-container">
+              <label for="mortgage-years">Mortgage Term</label>
+              <div>
+                <input
+                  type="text"
+                  class="js-input-number-field js-mortgage-years"
+                  id="mortgage-years"
+                  name="mortgage-years"
+                /><span>years</span>
+              </div>
+              <div class="required-message-invisible js-error-message">
+                This field is required
+              </div>
+            </div>
+            <div class="mortgage-details js-input-number-field-container">
+              <label for="mortgage-percent">Interest Rate</label>
+              <div>
+                <input
+                  type="text"
+                  class="js-input-number-field js-mortgage-percent"
+                  id="mortgage-percent"
+                  name="mortgage-percent"
+                /><span>&#37;</span>
+              </div>
+              <div class="required-message-invisible js-error-message">
+                This field is required
+              </div>
+            </div>
+          </div>
+          <div class="mortgage-type-section">
+            <label class="mortgage-type-label">Mortgage Type</label>
+            <div class="js-radio-container">
+              <input
+                type="radio"
+                name="check-mortgage-type"
+                data-choice="Repayment"
+              />
+              <span>Repayment</span>
+            </div>
+            <div class="js-radio-container">
+              <input
+                type="radio"
+                name="check-mortgage-type"
+                data-choice="Interest"
+              />
+              <span>Interest Only</span>
+            </div>
+
+            <span class="required-message-invisible js-error-message-radio">
+              This field is required
+            </span>
+          </div>
+          <div class="calculate-div">
+            <button>
+              <img
+                src="assets/images/icon-calculator.svg"
+                alt="calculator icon"
+              />
+              Calculate Repayments
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right-section js-right-section" id="right-section">
+        <img
+          src="assets/images/illustration-empty.svg"
+          loading="lazy"
+          alt="calculator icon"
+        />
+        <p class="illustration-empty-heading">Results shown here</p>
+        <p class="illustration-empty-p">
+          Complete the form and click "Calculate Repayments" to see what your
+          monthly repayments would be
+        </p>
+      </div>
+    </main>
+    <script type="module" src="script/index.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,87 @@
+@media screen and (max-width :426px){
+  
+  body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: transparent;
+  }
+  main{
+    width: 100%;
+    min-height: 100% ;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #left-section{
+    justify-content: start;
+    align-items: start;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+  #left-section button{
+    margin-top: 0;
+  }
+  #form-section{
+    display: flex;
+    justify-content: space-evenly;
+    height: 9%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .calculate-div{
+    margin-top: 2rem;
+  }
+  .mortgage-type-section{
+    padding: 0;
+    margin: 0;
+  }
+  #left-section-header{
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+  }
+  #clear-span{
+    font-size: 1rem;
+
+  }
+  .mortgage-amount-div{
+  
+    margin: 0;
+    justify-content: start;
+    padding: 0;
+  }
+  .mortgage-term-interes-div{
+    flex-direction: column;
+
+  }
+  .mortgage-term-interes-div div{
+    justify-content: start;
+    height: 50%;
+  }
+  
+  #right-section{
+    border-radius: 0;
+    min-height: 60%;
+    width: 100vw;
+    justify-content: center;
+    padding: 0.938rem;
+  }
+  .header-results-container{
+    width: 90%;
+  }
+}
+
+

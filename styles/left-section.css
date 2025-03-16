@@ -1,0 +1,277 @@
+/* Ids */
+#left-section{
+  background-color: white;
+  border-top-right-radius: 0 ;
+}
+#left-section-header{
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.25rem;
+  color: hsl(202, 55%, 16%);
+  font-size: 1.125rem;
+
+}
+#clear-span{
+  color:hsl(203, 41%, 72%) ;
+  font-weight: 100;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  pointer-events: all;
+}
+#clear-span:hover{
+  text-decoration: underline;
+}
+#form-section{
+  display: flex;
+  justify-content: space-between;
+}
+/* Classes */
+.mortgage-type-section,
+.mmortgage-term-interest-div,
+.mortgage-amount-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color:hsl(203, 41%, 72%) ;
+  width: 100%;
+  margin-left: 0.313rem;
+  height: auto;
+}
+.mortgage-amount-div div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  height: auto;
+  margin: 0;
+}
+.mortgage-term-interest-div label,
+.mortgage-amount-div label{
+  margin-bottom: 0.625rem;
+  color: hsl(200, 26%, 54%);
+  font-size: 0.938rem;
+}
+.mortgage-term-interest-div span,
+.mortgage-amount-div span{
+  z-index: 100;
+  width: 1.25rem;
+  height: 1rem;
+  padding:0.563rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(202, 86%, 94%);
+  color: hsl(200, 26%, 54%);
+  font-weight: bold;
+  font-size: 0.925rem;
+  width: 20%;
+  border: hsl(200, 24%, 40%) 1px solid;
+  border-radius: 2px;
+  border-top-right-radius: 0px ;
+  border-bottom-right-radius: 0px;
+  border-right: none ;
+  cursor: pointer;
+  transition: border  0.25s;
+  transition: background-color 0.25s;
+}
+.mortgage-term-interest-div input,
+.mortgage-amount-div input{
+  border-left: none ;
+  width: 80%;
+  height: 1rem;
+  padding:0.563rem;
+  border-radius: 4px;
+  border: hsl(200, 24%, 40%) 1px solid;
+  outline: none;
+  border-top-left-radius: 0px ;
+  border-bottom-left-radius: 0px;
+  color:hsl(202, 55%, 16%) ;
+  font-size: 1rem;
+  cursor: pointer;
+  border-left: none;
+  transition: border 0.25s;
+}
+.mortgage-amount-div input {
+  border-left: none !important;
+
+}
+.mortgage-amount-div input:focus{
+  border:  1px solid hsl(61, 70%, 52%);
+}
+.mortgage-amount-div:focus-within span{
+  border:  1px solid hsl(61, 70%, 52%);
+  background-color: hsl(61, 70%, 52%);
+}
+.mortgage-details input:focus{
+  border:  1px solid hsl(61, 70%, 52%);
+}
+.mortgage-details :focus-within span{
+  border:  1px solid hsl(61, 70%, 52%);
+  background-color: hsl(61, 70%, 52%);
+}
+.mortgage-required-error input, .mortgage-required-error span{
+  transition: all 0.25s;
+}
+.mortgage-required-error input{
+  border:  1px solid hsl(4, 69%, 50%) !important;
+}
+.mortgage-required-error span{
+  border:  1px solid hsl(4, 69%, 50%)!important;
+  background-color: hsl(4, 69%, 50%) !important;
+  color: white;
+}
+/* Erore massege */
+.required-message-invisible{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.725rem;
+  color: hsl(4, 69%, 50%);
+  opacity: 0;
+  pointer-events: none;
+  margin: 0.563rem !important;
+}
+.visable{
+  opacity: 1;
+  pointer-events:all;
+
+}
+
+.mortgage-term-interest-div{
+  flex-direction: row;
+  font-size: 1.063rem;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+  gap: 1.25rem;
+}
+.mortgage-term-interest-div div{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0;
+}
+.mortgage-term-interest-div div div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  padding: 0;
+}
+.mortgage-term-interest-div  input{
+  border: hsl(200, 24%, 40%) 1px solid ;
+  border-radius: 4px;
+  border-top-right-radius: 0px ;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.mortgage-term-interest-div span{
+  border: hsl(200, 24%, 40%) 1px solid ;
+  width: 20%;
+  border-radius:4px;
+  border-top-left-radius: 0px ;
+  border-bottom-left-radius: 0px;
+  border-left: none ;
+}
+.mortgage-type-section{
+  justify-content: space-between;
+  height: 7.813rem;
+  color: hsl(200, 26%, 54%);
+  font-size: 0.938rem;
+  gap: 0.625rem;
+
+}
+.mortgage-type-section div{
+  display: flex;
+  flex-direction: row;
+  border: black solid 1px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 0.625rem 0;
+  height: 1rem;
+  border-radius: 5px;
+  color:hsl(202, 55%, 16%) ;
+  cursor: pointer;
+  font-weight: bold;
+  transition: border 0.25s;
+  transition: all 0.3s;
+}
+.actived-radio-button-div{
+  background-color: rgba(215, 218, 47, 0.1);
+  border-color: hsl(61, 70%, 52%) !important;
+}
+.mortgage-type-section div:hover{
+  border: hsl(61, 70%, 52%) solid 1px;
+}
+
+input[type="radio"]:checked {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: white;
+  border: hsl(61, 70%, 52%) solid 2px;
+  border-radius: 50%;
+  position: relative;
+}
+input[type="radio"]:checked::before{
+  content: '';
+  background-color: hsl(61, 70%, 52%) ;
+  width: 0.688rem;
+  height: 0.688rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%,50%);
+}
+.mortgage-type-section input[type = radio]{
+  width: 1.063rem;
+  height: 1.063rem;
+  margin-right: 0.625rem;
+  cursor: pointer;
+}
+
+
+
+
+.calculate-div{
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0;
+  height: auto;
+}
+.calculate-div button{
+  width: 70%;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 19px;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: hsl(61, 70%, 52%);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.calculate-div button:hover{
+  opacity: 0.7;
+}
+
